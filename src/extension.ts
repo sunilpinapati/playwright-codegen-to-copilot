@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import { spawn } from 'child_process';
+import { Buffer } from 'buffer';
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand('playwright.codegenToCopilot', async () => {
@@ -17,10 +18,10 @@ export function activate(context: vscode.ExtensionContext) {
 
     vscode.window.showInformationMessage('Recording with Playwright Codegen. Complete your interactions and then close the browser window to finish.');
 
-    processSpawned.stdout.on('data', data => { codeOutput += data.toString(); });
-    processSpawned.stderr.on('data', data => { errorOutput += data.toString(); });
+    processSpawned.stdout.on('data', (data: Buffer) => { codeOutput += data.toString(); });
+    processSpawned.stderr.on('data', (data: Buffer) => { errorOutput += data.toString(); });
 
-    processSpawned.on('close', async (code) => {
+    processSpawned.on('close', async (code: number) => {
       if (code !== 0) {
         vscode.window.showErrorMessage(`Playwright codegen exited with code ${code}: ${errorOutput}`);
         return;

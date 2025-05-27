@@ -7,9 +7,6 @@
   "engines": {
     "vscode": "^1.80.0"
   },
-  "activationEvents": [
-    "onCommand:playwright.codegenToCopilot"
-  ],
   "contributes": {
     "commands": [
       {
@@ -24,8 +21,8 @@
     "watch": "tsc -w -p ./"
   },
   "devDependencies": {
+    "@types/node": "^22.15.21",
     "@types/vscode": "^1.80.0",
-    "typescript": "^5.0.0",
-    "vscode": "^1.1.41"
+    "typescript": "^5.0.0"
   }
 }
