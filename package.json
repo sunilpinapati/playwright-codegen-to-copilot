@@ -1,0 +1,31 @@
+{
+  "name": "playwright-to-copilot",
+  "displayName": "Playwright to Copilot",
+  "description": "Generate Playwright TypeScript code and send it to Copilot Chat for further modification.",
+  "version": "0.0.1",
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "activationEvents": [
+    "onCommand:playwright.codegenToCopilot"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "playwright.codegenToCopilot",
+        "title": "Playwright: Codegen to Copilot"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0",
+    "vscode": "^1.1.41"
+  }
+}
