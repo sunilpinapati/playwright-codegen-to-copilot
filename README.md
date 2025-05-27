@@ -1,7 +1,7 @@
 # Playwright to Copilot
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/YOUR_PUBLISHER_NAME.playwright-to-copilot.svg)](https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_NAME.playwright-to-copilot)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/YOUR_PUBLISHER_NAME.playwright-to-copilot.svg)](https://marketplace.visualstudio.com/items?itemName=YOUR_PUBLISHER_NAME.playwright-to-copilot)
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/sunilpinapati.playwright-to-copilot.svg)](https://marketplace.visualstudio.com/items?itemName=sunilpinapati.playwright-to-copilot)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/sunilpinapati.playwright-to-copilot.svg)](https://marketplace.visualstudio.com/items?itemName=sunilpinapati.playwright-to-copilot)
 
 Generate Playwright TypeScript code and send it to GitHub Copilot Chat for further modification or explanation. This extension streamlines playwright test generation and AI-powered code assistance.
 
